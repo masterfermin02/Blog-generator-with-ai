@@ -1,6 +1,6 @@
 # Blog generator with ai
 
-This is a simple blog generator that uses the OpenAI API to generate a blog post from a given title and summary. It also uses the Google Cloud Speech to Text API to transcribe audio to text.
+This is a simple blog generator that uses the OpenAI API to generate a blog post from a given title.
 
 ## Installation
 
