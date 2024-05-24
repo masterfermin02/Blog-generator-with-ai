@@ -20,7 +20,7 @@ Copy the `.env.example` file to `.env` and fill in the necessary details.
 
 This the command line type:
 ```cmd
-php blogp-generator about "How to be a software developer"
+php blog-generator about "How to be a software developer"
 ```
 
 Result:

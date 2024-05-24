@@ -29,8 +29,11 @@ class About extends Command
      */
     public function handle(Client $openAIClient)
     {
+        // Generate a blog post based on the topic using openai
         $topic = $this->argument('topic');
-        $output = 'blog.md';
+        $fileTitle = str_replace(' ', '_', $topic);
+        $datetime = new \DateTime();
+        $output = 'blogs/'. $datetime->format('m_d_Y_g_i_A') . '-'. $fileTitle . '.md';
         $this->info("Generating a blog post about $topic...");
         $result = $openAIClient->chat()->create([
             'model' => 'gpt-4',
